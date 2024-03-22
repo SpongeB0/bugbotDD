@@ -873,64 +873,17 @@ senddocu(buffer)
                 break
                 case 'p':
             case 'ping':{
-                const used = process.memoryUsage()
-                const cpus = os.cpus().map(cpu => {
-                    cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
-                    return cpu
-                })
-                const cpu = cpus.reduce((last, cpu, _, {
-                    length
-                }) => {
-                    last.total += cpu.total
-                    last.speed += cpu.speed / length
-                    last.times.user += cpu.times.user
-                    last.times.nice += cpu.times.nice
-                    last.times.sys += cpu.times.sys
-                    last.times.idle += cpu.times.idle
-                    last.times.irq += cpu.times.irq
-                    return last
-                }, {
-                    speed: 0,
-                    total: 0,
-                    times: {
-                        user: 0,
-                        nice: 0,
-                        sys: 0,
-                        idle: 0,
-                        irq: 0
-                    }
-                })
-                let timestamp = speed()
-                let latensi = speed() - timestamp
-                neww = performance.now()
-                oldd = performance.now()
-                respon = `
-Response Speed ${latensi.toFixed(4)} _Second_ \n ${oldd - neww} _miliseconds_\n\nRuntime : ${runtime(process.uptime())}
-
-💻 Info Server
-RAM: ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
-
-_NodeJS Memory Usaage_
-${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}
-
-${cpus[0] ? `_Total CPU Usage_
-${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
-${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
-`.trim()
-                await XeonBotInc.sendMessage(m.chat, {
-                    text: respon,
-                    contextInfo: {
-                        externalAdReply: {
-                            showAdAttribution: true,
-                            title: `${botname}`,
-                            body: `${latensi.toFixed(4)} Second`,
-                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
-                            sourceUrl: global.link,
-                            mediaType: 1,
-                            renderLargerThumbnail: true
-                        }
-                    }
+                let timestampe = speed()
+                let latensie = speed() - timestampe
+                 let ping = `> 📌 Hey there, 🤗
+> ${botname} 
+> is online 📡🛰️
+> 📌 ʀᴇsᴘᴏɴsᴇ sᴘᴇᴇᴅ :  ${latensie.toFixed(4)} ms 🏃
+> 📌 ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}⏰
+>  
+> 📌 ᴄʀᴇᴀᴛᴇᴅ ʙʏ : ${ownername} 👑`
+                XeonBotInc.sendMessage(m.chat, {
+                    text: ping,
                 }, {
                     quoted: m
                 })
@@ -947,7 +900,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${ownername}`,
-                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/993d1d5b06951010cce4a.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -967,7 +920,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `FORGET DONATE`,
-                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/993d1d5b06951010cce4a.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -987,7 +940,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `SCRIPT OF ${botname} is on YouTube @DGXeon`,
-                            thumbnailUrl: 'https://i.ibb.co/dQkXV2Y/Picsart-23-10-10-18-28-51-982.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/993d1d5b06951010cce4a.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -2355,7 +2308,7 @@ if (typemenu === 'v1') {
                             externalAdReply: {
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://i.ibb.co/kSs1stX/thumb.jpg',
+                                thumbnailUrl: 'https://telegra.ph/file/993d1d5b06951010cce4a.jpg',
                                 sourceUrl: link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -2373,7 +2326,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/Wppj16p/cheemspic.jpg',
+      thumbnailUrl: 'https://telegra.ph/file/993d1d5b06951010cce4a.jpg',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true

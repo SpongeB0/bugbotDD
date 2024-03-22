@@ -12,24 +12,24 @@ const chalk = require('chalk')
 //contact details
 global.ownernomer = "15202238877","919339619072"
 global.ownername = "bot deployer"
-global.ytname = "YT: Xeon"
-global.socialm = "GitHub: DGXeon"
-global.location = "India, Mizoram, Aizawl"
+global.ytname = "No YTChannel"
+global.socialm = "GitHub: Debashis121212"
+global.location = "Nalhati, Birbhum, WB, INDIA"
 
-global.ownernumber = '15202238877'  //creator number
-global.ownername = 'DGXeon' //owner name
-global.botname = 'ˣᵉᵒⁿ ᵇᵘᵍ ᵇᵒᵗ' //name of the bot
+global.ownernumber = '919339619072'  //creator number
+global.ownername = '꧁﴿☬✞ 𝔇𝔢𝔟𝔞𝔰𝔥𝔦𝔰 𝔇𝔢𝔶 ✞☬﴾꧂™' //owner name
+global.botname = '꧁﴿·⁎̩͙ ⁑̩͙̩͙ ⁂̩̩͙»✥«·-𝕯𝕯 𝕭𝖀𝕲 𝕭𝖔𝖙-·»✥«⁂̩̩͙͙ ⁑̩͙̩͙ ⁎̩͙.·﴾꧂' //name of the bot
 
 //sticker details
 global.packname = 'Sticker By'
-global.author = '🦄DGXeon\n\nContact: +916909137213'
+global.author = '🦄Debashis\n\nContact: +919339619072'
 
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "Xeon Bot Inc."
+global.wm = "Debashis"
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20'
+global.link = 'https://www.facebook.com/sipra.dey.56863/'
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
