@@ -10,23 +10,23 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //contact details
-global.ownernomer = "2348020532388","2348020532388"
-global.ownername = "𝐂𝐚𝐥𝐞𝐛 ☣️"
+global.ownernomer = "2349065036087","2348020532388"
+global.ownername = "𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚 ☣️"
 global.ytname = "No YTChannel"
 global.socialm = "GitHub: bumbum001"
 global.location = "nigeria, lagos, ikorodu, ABUJA"
 
 global.ownernumber = '2348020532388'  //creator number
-global.ownername = '꧁﴿☬✞ 𝐂𝐚𝐥𝐞𝐛 ✞☬﴾꧂™' //owner name
-global.botname = '꧁﴿·⁎̩͙ ⁑̩͙̩͙ ⁂̩̩͙»✥«·-𝐂𝐚𝐥𝐞𝐛 𝐁𝐮𝐠 𝐁𝐨𝐭-·»✥«⁂̩̩͙͙ ⁑̩͙̩͙ ⁎̩͙.·﴾꧂' //name of the bot
+global.ownername = '꧁﴿☬✞ 𝐓𝐞𝐦𝐢 ✞☬﴾꧂™' //owner name
+global.botname = '꧁﴿·⁎̩͙ ⁑̩͙̩͙ ⁂̩̩͙»✥«·-𝐓𝐞𝐦𝐢 𝐁𝐮𝐠 𝐁𝐨𝐭-·»✥«⁂̩̩͙͙ ⁑̩͙̩͙ ⁎̩͙.·﴾꧂' //name of the bot
 
 //sticker details
 global.packname = 'Sticker By'
-global.author = 'Caleb'
+global.author = '𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚'
 
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "Caleb"
+global.wm = "𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚"
 
 //theme link
 global.link = '.'
