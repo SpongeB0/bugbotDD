@@ -10,26 +10,26 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //contact details
-global.ownernomer = "2349065036087","2348020532388"
-global.ownername = "𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚 ☣️"
+global.ownernomer = "2349091878122","2348022159244"
+global.ownername = "𝐃𝚵𝚳𝚭𝚭𝐘🥇❤️‍🩹"
 global.ytname = "No YTChannel"
-global.socialm = "GitHub: bumbum001"
-global.location = "nigeria, lagos, ikorodu, ABUJA"
+global.socialm = "GitHub: Feranmi245"
+global.location = "nigeria, lagos, ABUJA"
 
-global.ownernumber = '2348020532388'  //creator number
-global.ownername = '꧁﴿☬✞ 𝐓𝐞𝐦𝐢 ✞☬﴾꧂™' //owner name
-global.botname = '꧁﴿·⁎̩͙ ⁑̩͙̩͙ ⁂̩̩͙»✥«·-𝐓𝐞𝐦𝐢 𝐁𝐮𝐠 𝐁𝐨𝐭-·»✥«⁂̩̩͙͙ ⁑̩͙̩͙ ⁎̩͙.·﴾꧂' //name of the bot
+global.ownernumber = '2349091878122'  //creator number
+global.ownername = '𝐃𝚵𝚳𝚭𝚭𝐘🥇❤️‍🩹' //owner name
+global.botname = '𝐃𝚵𝚳𝚭𝚭𝐘—𝚳𝐃🥇❤️‍🩹' //name of the bot
 
 //sticker details
 global.packname = 'Sticker By'
-global.author = '𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚'
+global.author = '𝐃𝚵𝚳𝚭𝚭𝐘🥇❤️‍🩹'
 
 //console view/theme
-global.themeemoji = '🪀'
-global.wm = "𝐓𝐞𝐦𝐢𝐥𝐢𝐨𝐥𝐮𝐰𝐚"
+global.themeemoji = ''
+global.wm = "𝐃𝚵𝚳𝚭𝚭𝐘🥇❤️‍🩹"
 
 //theme link
-global.link = '.'
+global.link = 'https://chat.whatsapp.com/FcQdLsLbwMX11qYhRG9PuC'
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
@@ -40,19 +40,19 @@ global.autoTyping = true //auto typing
 global.autorecordtype = false //auto typing + recording
 global.autoread = false //auto read messages
 global.autobio = false //auto update bio
-global.anti92 = false //auto block +92 
-global.autoswview = false //auto view status/story
+global.anti212 = true //auto block +212 
+global.autoswview = true //auto view status/story
 
 //menu type 
 //v1 is image menu, 
 //v2 is link + image menu,
 //v3 is video menu,
 //v4 is call end menu
-global.typemenu = 'v1'
+global.typemenu = 'v2'
 
 //reply messages
 global.mess = {
-    done: 'Done !',
+    done: 'succesfully done !',
     prem: 'This feature can be used by premium user only',
     admin: 'This feature can be used by admin only',
     botAdmin: 'This feature can only be used when the bot is a group admin ',
